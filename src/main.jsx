@@ -26,7 +26,9 @@ datadogRum.init({
     trackResources: true,
     trackLongTasks: true,
     defaultPrivacyLevel: 'mask-user-input',
-    allowedTracingUrls: ["http://a509c2fce57fe4879a9938b6c407cf0b-1397642242.us-east-1.elb.amazonaws.com", "http://aec13508a6efa412e95d9553a2ec6069-1052684103.us-east-1.elb.amazonaws.com","http://a5e3612f4f27a4a5aa9f9a0bb6e78687-842105707.us-east-1.elb.amazonaws.com", "http://add30e08810944ef2ae67ae74dc6a946-842359260.us-east-1.elb.amazonaws.com"]
+    trackInteractions: true,
+    datadogTracing: true,
+    allowedTracingUrls: ["http://a509c2fce57fe4879a9938b6c407cf0b-1397642242.us-east-1.elb.amazonaws.com", "http://aec13508a6efa412e95d9553a2ec6069-1052684103.us-east-1.elb.amazonaws.com","http://a5e3612f4f27a4a5aa9f9a0bb6e78687-842105707.us-east-1.elb.amazonaws.com", "http://add30e08810944ef2ae67ae74dc6a946-842359260.us-east-1.elb.amazonaws.com","http://54.198.151.179/","http://localhost:5173", (url) => url.startsWith("http://localhost:5173")]
 
 
 });
